@@ -1,0 +1,90 @@
+{
+    "created_time": "2020-05-25T12:28:34Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2020-05-25T12:30:07Z",
+            "modified_time": "2020-05-26T08:32:01Z",
+            "name": "Pandas 速查手册中文版.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2020-05-25T12:39:18Z",
+            "modified_time": "2020-05-25T12:47:20Z",
+            "name": "simpread-Matplotlib 教程 .md",
+            "tags": [
+                "python",
+                "可视化"
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2020-05-25T12:56:33Z",
+            "modified_time": "2020-05-25T13:16:43Z",
+            "name": "RFM 用户分析模型（附案例数据和代码）.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2020-05-26T08:41:40Z",
+            "modified_time": "2020-05-26T08:42:30Z",
+            "name": "pandas 入门详细教程（附导图）.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2020-05-26T09:16:03Z",
+            "modified_time": "2020-05-26T09:24:35Z",
+            "name": "10000 字 Pandas 基础 + 进阶笔记！.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2020-05-26T09:44:18Z",
+            "modified_time": "2020-05-26T09:44:18Z",
+            "name": "simpread-Matplotlib 教程 _001.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2020-05-26T09:49:20Z",
+            "modified_time": "2020-05-26T09:49:20Z",
+            "name": "25 个 Matplotlib 图（含 Python 代码模板）.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2020-05-26T11:06:10Z",
+            "modified_time": "2020-05-27T02:33:21Z",
+            "name": "pandas.Series.plot_python.md",
+            "tags": [
+            ]
+        }
+    ],
+    "sub_directories": [
+    ],
+    "version": "1"
+}
