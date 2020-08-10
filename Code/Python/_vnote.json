@@ -16,8 +16,8 @@
             "attachments": [
             ],
             "created_time": "2020-05-25T12:39:18Z",
-            "modified_time": "2020-05-27T12:52:45Z",
-            "name": "Matplotlib 教程 .md",
+            "modified_time": "2020-05-29T02:34:21Z",
+            "name": "Matplotlib教程.md",
             "tags": [
                 "python",
                 "可视化"
@@ -38,7 +38,7 @@
             "attachments": [
             ],
             "created_time": "2020-05-26T08:41:40Z",
-            "modified_time": "2020-05-26T08:42:30Z",
+            "modified_time": "2020-06-08T04:58:58Z",
             "name": "pandas 入门详细教程（附导图）.md",
             "tags": [
             ]
@@ -82,9 +82,65 @@
             "name": "pandas.Series.plot_python.md",
             "tags": [
             ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2020-05-29T07:34:32Z",
+            "modified_time": "2020-05-29T09:15:14Z",
+            "name": "使用 Pandas 创建数据透视表.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2020-05-29T07:38:39Z",
+            "modified_time": "2020-05-29T07:38:39Z",
+            "name": "HTTP 与 HTTPS 的区别.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2020-06-01T03:19:16Z",
+            "modified_time": "2020-06-01T07:43:34Z",
+            "name": "pandas 透视表 pivot_table 功能详解.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2020-06-08T08:28:52Z",
+            "modified_time": "2020-06-08T09:10:34Z",
+            "name": "pandas中DataFrame使用.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2020-07-08T06:48:40Z",
+            "modified_time": "2020-07-16T09:14:13Z",
+            "name": "wkhtmltopdf详细参数设置.md",
+            "tags": [
+            ]
         }
     ],
     "sub_directories": [
+        {
+            "name": "pyecharts"
+        },
+        {
+            "name": "ML"
+        }
     ],
     "version": "1"
 }
