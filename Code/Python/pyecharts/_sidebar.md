@@ -1,0 +1,44 @@
+pyecharts 是一个用于生成 Echarts 图表的类库。Echarts 是百度开源的一个数据可视化 JS 库。用 Echarts 生成的图可视化效果非常棒，pyecharts 是为了与 Python 进行对接，方便在 Python 中直接使用数据生成图。
+
+- 概览
+  - [简介](intro.md)
+  - [快速开始](quickstart.md)
+- 配置项
+  - [全局配置项](global_options.md)
+  - [系列配置项](series_options.md)
+- 基本使用
+  - [图表 API](chart_api.md)
+  - [图表示例](demo_data.md)
+  - [全局变量](global_vars.md)
+- 图表类型
+  - [基本图表](basic_charts.md)
+  - [直角坐标系图表](rectangular_charts.md)
+  - [树型图表](tree_charts.md)
+  - [地理图表](geography_charts.md)
+  - [3D 图表](3d_charts.md)
+  - [组合图表](composite_charts.md)
+  - [HTML 组件](html_components.md)
+- 进阶话题
+  - [参数传递](parameters.md)
+  - [数据格式](data_format.md)
+  - [定制主题](themes.md)
+  - [定制地图](maps.md)
+  - [渲染图片](render_images.md)
+  - [Notebook](notebook.md)
+  - [原生 Javascript](javascript.md)
+  - [资源引用](assets_host.md)
+- Web 框架整合
+  - [Flask](web_flask.md)
+  - [Sanic](web_sanic.md)
+  - [Django](web_django.md)
+  - [Tornado](web_tornado.md)
+- 其他资源
+  - [地理地图数据](datasets.md)
+- 项目发布
+  - [版本日志](changelog.md)
+  - [发布日志](release-note/.md)
+- 项目开发
+  - [参与贡献](contribution.md)
+  - [技术文档](technical.md)
+  - [赞助者名单](donors.md)
+  - [FAQ](faq.md)

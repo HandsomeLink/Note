@@ -1,11 +1,4 @@
 > 本文由 [简悦 SimpRead](http://ksria.com/simpread/) 转码， 原文地址 https://mp.weixin.qq.com/s/Rx6sP6oyYFG2NPePkiw3wg
-
-CSDN 博客
-
-**作者：zsx_yiyiyi**
-
-**编辑：python 大本营**
-
 50 个 Matplotlib 图的汇编，在数据分析和可视化中最有用。此列表允许您使用 Python 的 Matplotlib 和 Seaborn 库选择要显示的可视化对象。
 
 **1. 关联**
@@ -79,7 +72,7 @@ CSDN 博客
 > 安德鲁斯曲线  
 > 平行坐标
 
-```
+```python
 # !pip install brewer2mpl
 import numpy as np
 import pandas as pd
@@ -106,12 +99,13 @@ sns.set_style("white")
 print(mpl.__version__)  #> 3.0.0
 print(sns.__version__)  #> 0.9.0
 ```
+# **关联**
 
 ## **1. 散点图**
 
 Scatteplot 是用于研究两个变量之间关系的经典和基本图。如果数据中有多个组，则可能需要以不同颜色可视化每个组。在 Matplotlib，你可以方便地使用。
 
-```
+```python
 # Import dataset 
 midwest = pd.read_csv("https://raw.githubusercontent.com/selva86/datasets/master/midwest_filter.csv")
 
@@ -144,7 +138,7 @@ plt.show()    
 
 有时，您希望在边界内显示一组点以强调其重要性。在此示例中，您将从应该被环绕的数据帧中获取记录，并将其传递给下面的代码中描述的记录。encircle()
 
-```
+```python
 from matplotlib import patches
 from scipy.spatial import ConvexHull
 import warnings; warnings.simplefilter('ignore')
@@ -191,11 +185,11 @@ plt.show()    
 
 ![][img-1]
 
-**3. 带线性回归最佳拟合线的散点图**
+## **3. 带线性回归最佳拟合线的散点图**
 
 如果你想了解两个变量如何相互改变，那么最合适的线就是要走的路。下图显示了数据中各组之间最佳拟合线的差异。要禁用分组并仅为整个数据集绘制一条最佳拟合线，请从下面的调用中删除该参数。
 
-```
+```python
 # Import Data
 df = pd.read_csv("https://raw.githubusercontent.com/selva86/datasets/master/mpg_ggplot2.csv")
 df_select = df.loc[df.cyl.isin([4,8]), :]
@@ -217,7 +211,7 @@ plt.title("Scatterplot with line of best fit grouped by number of cyli
 
 或者，您可以在其自己的列中显示每个组的最佳拟合线。你可以通过在里面设置参数来实现这一点。
 
-```
+```python
 # Import Data
 df = pd.read_csv("https://raw.githubusercontent.com/selva86/datasets/master/mpg_ggplot2.csv")
 df_select = df.loc[df.cyl.isin([4,8]), :]
@@ -239,11 +233,11 @@ plt.show()
 
 ![][img-3]
 
-**4. 抖动图**
+## **4. 抖动图**
 
 通常，多个数据点具有完全相同的 X 和 Y 值。结果，多个点相互绘制并隐藏。为避免这种情况，请稍微抖动点，以便您可以直观地看到它们。这很方便使用
 
-```
+```python
 # Import Data
 df = pd.read_csv("https://raw.githubusercontent.com/selva86/datasets/master/mpg_ggplot2.csv")
 
@@ -258,11 +252,11 @@ plt.show()
 
 ![][img-4]
 
-**5. 计数图**
+## **5. 计数图**
 
 避免点重叠问题的另一个选择是增加点的大小，这取决于该点中有多少点。因此，点的大小越大，周围的点的集中度就越大。
 
-```
+```python
 # Import Data
 df = pd.read_csv("https://raw.githubusercontent.com/selva86/datasets/master/mpg_ggplot2.csv")
 df_counts = df.groupby(['hwy', 'cty']).size().reset_index(name='counts')
@@ -278,11 +272,11 @@ plt.show()
 
 ![][img-5]
 
-**6. 边缘直方图**
+## **6. 边缘直方图**
 
 边缘直方图具有沿 X 和 Y 轴变量的直方图。这用于可视化 X 和 Y 之间的关系以及单独的 X 和 Y 的单变量分布。该图如果经常用于探索性数据分析（EDA）。
 
-```
+```python
 # Import Data
 df = pd.read_csv("https://raw.githubusercontent.com/selva86/datasets/master/mpg_ggplot2.csv")
 
@@ -319,11 +313,11 @@ plt.show()
 
 ![][img-6]
 
-**7. 边缘箱形图**
+## **7. 边缘箱形图**
 
 边缘箱图与边缘直方图具有相似的用途。然而，箱线图有助于精确定位 X 和 Y 的中位数，第 25 和第 75 百分位数。
 
-```
+```python
 # Import Data
 df = pd.read_csv("https://raw.githubusercontent.com/selva86/datasets/master/mpg_ggplot2.csv")
 
@@ -362,11 +356,11 @@ plt.show()
 
 ![][img-7]
 
-**8. 相关图**
+## **8. 相关图**
 
 Correlogram 用于直观地查看给定数据帧（或 2D 数组）中所有可能的数值变量对之间的相关度量。
 
-```
+```python
 # Import Dataset
 df = pd.read_csv("https://github.com/selva86/datasets/raw/master/mtcars.csv")
 
@@ -383,11 +377,11 @@ plt.show()
 
 ![][img-8]
 
-**9. 矩阵图**
+## **9. 矩阵图**
 
 成对图是探索性分析中的最爱，以理解所有可能的数字变量对之间的关系。它是双变量分析的必备工具。
 
-```
+```python
 # Load Dataset
 df = sns.load_dataset('iris')
 
@@ -411,13 +405,13 @@ plt.show()
 
 ![][img-10]
 
-**偏差**
+# **偏差**
 
-**10. 发散型条形图**
+## **10. 发散型条形图**
 
 如果您想根据单个指标查看项目的变化情况，并可视化此差异的顺序和数量，那么发散条是一个很好的工具。它有助于快速区分数据中组的性能，并且非常直观，并且可以立即传达这一点。
 
-```
+```python
 # Prepare Data
 df = pd.read_csv("https://github.com/selva86/datasets/raw/master/mtcars.csv")
 x = df.loc[:, ['mpg']]
@@ -440,11 +434,11 @@ plt.show()
 
 ![][img-11]
 
-**11. 发散型文本**
+## **11. 发散型文本**
 
 分散的文本类似于发散条，如果你想以一种漂亮和可呈现的方式显示图表中每个项目的价值，它更喜欢。
 
-```
+```python
 # Prepare Data
 df = pd.read_csv("https://github.com/selva86/datasets/raw/master/mtcars.csv")
 x = df.loc[:, ['mpg']]
@@ -470,11 +464,11 @@ plt.show()
 
 ![][img-12]
 
-**12. 发散型包点图**
+## **12. 发散型包点图**
 
 发散点图也类似于发散条。然而，与发散条相比，条的不存在减少了组之间的对比度和差异。
 
-```
+```python
 # Prepare Data
 df = pd.read_csv("https://github.com/selva86/datasets/raw/master/mtcars.csv")
 x = df.loc[:, ['mpg']]
@@ -507,11 +501,11 @@ plt.show()
 
 ![][img-13]
 
-**13. 带标记的发散型棒棒糖图**
+## **13. 带标记的发散型棒棒糖图**
 
 带标记的棒棒糖通过强调您想要引起注意的任何重要数据点并在图表中适当地给出推理，提供了一种可视化分歧的灵活方式。
 
-```
+```python
 # Prepare Data
 df = pd.read_csv("https://github.com/selva86/datasets/raw/master/mtcars.csv")
 x = df.loc[:, ['mpg']]
@@ -553,11 +547,11 @@ plt.show()
 
 ![][img-14]
 
-**14. 面积图**
+## **14. 面积图**
 
 通过对轴和线之间的区域进行着色，区域图不仅强调峰值和低谷，而且还强调高点和低点的持续时间。高点持续时间越长，线下面积越大。
 
-```
+```python
 import numpy as np
 import pandas as pd
 
@@ -592,13 +586,13 @@ plt.show()
 
 ![][img-15]
 
-**排序**  
+# **排序**  
 
-**15. 有序条形图**
+## **15. 有序条形图**
 
 有序条形图有效地传达了项目的排名顺序。但是，在图表上方添加度量标准的值，用户可以从图表本身获取精确信息。
 
-```
+```python
 # Prepare Data
 df_raw = pd.read_csv("https://github.com/selva86/datasets/raw/master/mpg_ggplot2.csv")
 df = df_raw[['cty', 'manufacturer']].groupby('manufacturer').apply(lambda x: x.mean())
@@ -631,11 +625,11 @@ plt.show()
 
 ![][img-16]
 
-**16. 棒棒糖图**
+##**16. 棒棒糖图**
 
 棒棒糖图表以一种视觉上令人愉悦的方式提供与有序条形图类似的目的。
 
-```
+```python
 # Prepare Data
 df_raw = pd.read_csv("https://github.com/selva86/datasets/raw/master/mpg_ggplot2.csv")
 df = df_raw[['cty', 'manufacturer']].groupby('manufacturer').apply(lambda x: x.mean())
@@ -663,11 +657,11 @@ plt.show()
 
 ![][img-17]
 
-**17. 包点图**
+## **17. 包点图**
 
 点图表传达了项目的排名顺序。由于它沿水平轴对齐，因此您可以更容易地看到点彼此之间的距离。
 
-```
+```python
 # Prepare Data
 df_raw = pd.read_csv("https://github.com/selva86/datasets/raw/master/mpg_ggplot2.csv")
 df = df_raw[['cty', 'manufacturer']].groupby('manufacturer').apply(lambda x: x.mean())
@@ -690,11 +684,11 @@ plt.show()
 
 ![][img-18]
 
-**18. 坡度图**
+## **18. 坡度图**
 
 斜率图最适合比较给定人 / 项目的 “之前” 和“之后”位置。
 
-```
+```python
 import matplotlib.lines as mlines
 # Import Data
 df = pd.read_csv("https://raw.githubusercontent.com/selva86/datasets/master/gdppercap.csv")
@@ -748,11 +742,11 @@ plt.show()
 
 ![][img-19]
 
-**19. 哑铃图**
+## **19. 哑铃图**
 
 哑铃图传达各种项目的 “前” 和“后”位置以及项目的排序。如果您想要将特定项目 / 计划对不同对象的影响可视化，那么它非常有用。
 
-```
+```python
 import matplotlib.lines as mlines
 
 # Import Data
@@ -796,13 +790,13 @@ plt.show()
 
 ![][img-20]
 
-**分配**
+# **分配**
 
-**20. 连续变量的直方图**
+## **20. 连续变量的直方图**
 
 直方图显示给定变量的频率分布。下面的表示基于分类变量对频率条进行分组，从而更好地了解连续变量和串联变量。
 
-```
+```python
 # Import Data
 df = pd.read_csv("https://github.com/selva86/datasets/raw/master/mpg_ggplot2.csv")
 
@@ -829,11 +823,11 @@ plt.show()
 
 ![][img-21]
 
-**21. 类型变量的直方图**
+## **21. 类型变量的直方图**
 
 分类变量的直方图显示该变量的频率分布。通过对条形图进行着色，您可以将分布与表示颜色的另一个分类变量相关联。
 
-```
+```python
 # Import Data
 df = pd.read_csv("https://github.com/selva86/datasets/raw/master/mpg_ggplot2.csv")
 
@@ -860,11 +854,11 @@ plt.show()
 
 ![][img-22]
 
-**22. 密度图**
+## **22. 密度图**
 
 密度图是一种常用工具，可视化连续变量的分布。通过 “响应” 变量对它们进行分组，您可以检查 X 和 Y 之间的关系。以下情况，如果出于代表性目的来描述城市里程的分布如何随着汽缸数的变化而变化。
 
-```
+```python
 # Import Data
 df = pd.read_csv("https://github.com/selva86/datasets/raw/master/mpg_ggplot2.csv")
 
@@ -882,11 +876,11 @@ plt.legend()
 
 ![][img-23]
 
-**23. 直方密度线图**
+## **23. 直方密度线图**
 
 带有直方图的密度曲线将两个图表传达的集体信息汇集在一起，这样您就可以将它们放在一个图形而不是两个图形中。
 
-```
+```python
 # Import Data
 df = pd.read_csv("https://github.com/selva86/datasets/raw/master/mpg_ggplot2.csv")
 
@@ -905,11 +899,11 @@ plt.show()
 
 ![][img-24]
 
-**24. Joy Plot**
+## **24. Joy Plot**
 
 Joy Plot 允许不同组的密度曲线重叠，这是一种可视化相对于彼此的大量组的分布的好方法。它看起来很悦目，并清楚地传达了正确的信息。它可以使用 joypy 基于的包来轻松构建 matplotlib。
 
-```
+```python
 # !pip install joypy
 # Import Data
 mpg = pd.read_csv("https://github.com/selva86/datasets/raw/master/mpg_ggplot2.csv")
@@ -925,11 +919,11 @@ plt.show()
 
 ![][img-25]
 
-**25. 分布式点图**
+## **25. 分布式点图**
 
 分布点图显示按组分割的点的单变量分布。点数越暗，该区域的数据点集中度越高。通过对中位数进行不同着色，组的真实定位立即变得明显。
 
-```
+```python
 import matplotlib.patches as mpatches
 
 # Prepare Data
