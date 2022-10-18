@@ -1,0 +1,105 @@
+vnote_backup_file_826537664 D:/安装程序/VNote/myNoteBook/Code/Python/数据处理笔记.md
+# 数据处理笔记
+
+## 字典的键值对互换
+
+```python
+# 用遍历互换键值对
+d1 = {'a':1,'b':2,'c':3}
+d2 = {}
+for key,value in d1.items():
+　　d2[value] = key
+print(d2)
+
+# 用列表生成器
+d1 = {'a':1,'b':2,'c':3}
+d2 = {key:value for v,k in d1.items()}
+print(d2)
+
+# 用zip运算符
+d1 = {'a':1,'b':2,'c':3}
+d2 = dict(zip(d1.value(),d1.key()))
+print(d2)
+```
+
+## 字符串转时间戳
+```python
+def time2stamp(cmnttime):   #转时间戳函数
+    cmnttime = datetime.strptime(cmnttime,'%Y/%m/%d %H:%M:%S')
+    return cmnttime
+```
+
+## 两个dataframe的交集和差集
+> 注：需先对df去重
+
+```python
+# 交集
+intersected_df = pd.merge(df1, df2, how='inner')
+ntersected_df = pd.merge(df1, df2, on=['Subject'], how='inner') # 指定列
+
+# 求差集（df2-df1）方法一
+set_diff_df = pd.concat([df2, df1, df1]).drop_duplicates(keep=False)
+
+# 求差集（df2-df1）方法二
+df1 = df1.append(df2)
+df1 = df1.append(df2)
+set_diff_df = df1.drop_duplicates(subset=['Subject', 'Score'],keep=False)
+```
+
+## 匹配最近数值
+```python
+a = {a[0],a[1],……,a[n-1],a[n]}
+np.searchsorted（a, v）#判断v在a中哪两个a[n-1],a[n]之间，并返回n-1
+```
+
+## 多列操作
+```python
+import pandas as pd
+
+df = pd.DataFrame({'a': np.random.randn(6),
+                   'b': ['foo', 'bar'] * 3,
+                   'c': np.random.randn(6)})
+
+print(df)
+def add(a, b):
+    return a + b
+
+df['Value'] = df.apply(lambda x: add(x['a'], x['c']), axis=1)
+```
+
+## timestamp和datetime之间的转换
+
+```python
+# 1. 字符串日期时间转换成时间戳
+# '2015-08-28 16:43:37.283' --> 1440751417.283
+# 或者 '2015-08-28 16:43:37' --> 1440751417.0
+def string2timestamp(strValue):
+ 
+    try:        
+        d = datetime.datetime.strptime(strValue, "%Y-%m-%d %H:%M:%S.%f")
+        t = d.timetuple()
+        timeStamp = int(time.mktime(t))
+        timeStamp = float(str(timeStamp) + str("%06d" % d.microsecond))/1000000
+        print timeStamp
+        return timeStamp
+    except ValueError as e:
+        print e
+        d = datetime.datetime.strptime(str2, "%Y-%m-%d %H:%M:%S")
+        t = d.timetuple()
+        timeStamp = int(time.mktime(t))
+        timeStamp = float(str(timeStamp) + str("%06d" % d.microsecond))/1000000
+        print timeStamp
+        return timeStamp
+
+# 2. 时间戳转换成字符串日期时间
+# 1440751417.283 --> '2015-08-28 16:43:37.283'
+def timestamp2string(timeStamp):
+    try:
+        d = datetime.datetime.fromtimestamp(timeStamp)
+        str1 = d.strftime("%Y-%m-%d %H:%M:%S.%f")
+        # 2015-08-28 16:43:37.283000'
+        return str1
+    except Exception as e:
+        print e
+        return ''
+```

@@ -1,0 +1,227 @@
+{
+    "created_time": "2022-10-18T09:21:08Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:08Z",
+            "id": "85",
+            "modified_time": "2022-10-18T09:21:08Z",
+            "name": "10000 字 Pandas 基础 + 进阶笔记！.md",
+            "signature": "113818299428868",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:08Z",
+            "id": "86",
+            "modified_time": "2022-10-18T09:21:08Z",
+            "name": "25 个 Matplotlib 图（含 Python 代码模板）.md",
+            "signature": "82331894181892",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:08Z",
+            "id": "87",
+            "modified_time": "2022-10-18T09:21:08Z",
+            "name": "conda 创建、激活、退出、删除虚拟环境.md",
+            "signature": "67535731847172",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:08Z",
+            "id": "88",
+            "modified_time": "2022-10-18T09:21:08Z",
+            "name": "GeoPandas基础教程.md",
+            "signature": "49299300708356",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:08Z",
+            "id": "89",
+            "modified_time": "2022-10-18T09:21:08Z",
+            "name": "HTTP 与 HTTPS 的区别.md",
+            "signature": "126093315960836",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:08Z",
+            "id": "90",
+            "modified_time": "2022-10-18T09:21:08Z",
+            "name": "jupyter lab 最强代码补全插件.md",
+            "signature": "115802574319620",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:08Z",
+            "id": "91",
+            "modified_time": "2022-10-18T09:21:08Z",
+            "name": "Matplotlib教程.md",
+            "signature": "105073746014212",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:09Z",
+            "id": "97",
+            "modified_time": "2022-10-18T09:21:09Z",
+            "name": "Numpy基础.md",
+            "signature": "2110495027205",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:09Z",
+            "id": "98",
+            "modified_time": "2022-10-18T09:21:09Z",
+            "name": "pandas 入门详细教程（附导图）.md",
+            "signature": "12865093136389",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:09Z",
+            "id": "99",
+            "modified_time": "2022-10-18T09:21:09Z",
+            "name": "Pandas 解析 json 数据的函数 - json_normalize().md",
+            "signature": "51292165533701",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:09Z",
+            "id": "101",
+            "modified_time": "2022-10-18T09:21:09Z",
+            "name": "pandas 透视表 pivot_table 功能详解.md",
+            "signature": "23349108305925",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:09Z",
+            "id": "102",
+            "modified_time": "2022-10-18T09:21:09Z",
+            "name": "Pandas 速查手册中文版.md",
+            "signature": "139119951769605",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:09Z",
+            "id": "103",
+            "modified_time": "2022-10-18T09:21:09Z",
+            "name": "pandas.Series.plot_python.md",
+            "signature": "62725368475653",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:10Z",
+            "id": "104",
+            "modified_time": "2022-10-18T09:21:10Z",
+            "name": "pandas中DataFrame使用.md",
+            "signature": "16760628473862",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:13Z",
+            "id": "141",
+            "modified_time": "2022-10-18T09:21:13Z",
+            "name": "python 实现——处理 Excel 表格（超详细）.md",
+            "signature": "3343150641161",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:13Z",
+            "id": "142",
+            "modified_time": "2022-10-18T09:21:13Z",
+            "name": "RFM 用户分析模型（附案例数据和代码）.md",
+            "signature": "52898483302409",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:13Z",
+            "id": "143",
+            "modified_time": "2022-10-18T09:21:13Z",
+            "name": "wkhtmltopdf详细参数设置.md",
+            "signature": "13036891828233",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:13Z",
+            "id": "144",
+            "modified_time": "2022-10-18T09:21:13Z",
+            "name": "使用 Pandas 创建数据透视表.md",
+            "signature": "95306990383113",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:13Z",
+            "id": "145",
+            "modified_time": "2022-10-18T09:21:13Z",
+            "name": "利用 pyecharts 绘制飞机航线图.md",
+            "signature": "7912995844105",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:13Z",
+            "id": "146",
+            "modified_time": "2022-10-18T09:21:13Z",
+            "name": "地理编码.md",
+            "signature": "1238616666121",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:14Z",
+            "id": "147",
+            "modified_time": "2022-10-18T09:21:14Z",
+            "name": "数据处理笔记.md",
+            "signature": "129305951498250",
+            "tags": [
+            ]
+        }
+    ],
+    "folders": [
+        {
+            "name": "ML"
+        },
+        {
+            "name": "pyecharts"
+        }
+    ],
+    "id": "84",
+    "modified_time": "2022-10-18T09:21:08Z",
+    "signature": "27205988937732",
+    "version": 3
+}

@@ -1,0 +1,51 @@
+{
+    "created_time": "2022-10-18T09:21:08Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:08Z",
+            "id": "93",
+            "modified_time": "2022-10-18T09:21:08Z",
+            "name": "KMeans 聚类，KMeans 原理，参数详解.md",
+            "signature": "120883520630788",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:09Z",
+            "id": "94",
+            "modified_time": "2022-10-18T09:21:09Z",
+            "name": "一天 1 个机器学习知识点（一）.md",
+            "signature": "99992799703045",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:09Z",
+            "id": "95",
+            "modified_time": "2022-10-18T09:21:09Z",
+            "name": "伦敦出租车数据分析，数据处理.md",
+            "signature": "72273080774661",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2022-10-18T09:21:09Z",
+            "id": "96",
+            "modified_time": "2022-10-18T09:21:09Z",
+            "name": "使用 EISeg 自动标注数据，yolov5 训练模型（保姆教程）.md",
+            "signature": "42783835320325",
+            "tags": [
+            ]
+        }
+    ],
+    "folders": [
+    ],
+    "id": "92",
+    "modified_time": "2022-10-18T09:21:08Z",
+    "signature": "24504454508548",
+    "version": 3
+}
